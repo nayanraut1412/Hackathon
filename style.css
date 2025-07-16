@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  cursor: url('icon-earth.png'), auto;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+
+}
+
+.video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  padding: 15px;
+  z-index: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  gap: 30px;
+  padding-right: 200px;
+}
+
+nav a {
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00ffcc;
+}
+
+.content {
+  font-size: 25px;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  text-align: center;
+}
+
+.section {
+  padding: 60px 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #e0f7fa;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section h2 {
+  color: #00ffc3;
+  margin-bottom: 15px;
+}
+
+.video-text .content-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.video-text iframe {
+  max-width: 100%;
+  width: 560px;
+  height: 315px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 200, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.video-text iframe:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(0, 255, 200, 0.7);
+}
+
+.video-text .text {
+  max-width: 600px;
+  color: #e0f7fa;
+  text-align: left;
+}
+
+.video-text .text h2 {
+  color: #00ffc3;
+  margin-bottom: 15px;
+}
+
+.pledge-section .pledge-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.pledge-section .pledge-text {
+  flex: 1;
+}
+
+.pledge-section .scroll-to-top {
+  scroll-timeline-axis: vertical;
+  text-decoration: none;
+  font-size: 22px;
+  background-color: #00ffc3;
+  color: black;
+  padding: 12px 16px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 255, 200, 0.5);
+  transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.pledge-section .scroll-to-top:hover {
+
+  cursor: pointer;
+  background-color: #00ffcc;
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+  .video-text .content-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .video-text .text {
+    text-align: center;
+  }
+}
